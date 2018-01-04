@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class StreamApp {
 	
+	private static Scanner teclado;
+
 	public static void byteStream() throws Exception{
 		FileInputStream entrada = new FileInputStream("C:/Users/carlos/Desktop/"
 				+ "Udemy/Java 8 para WEB/cursojava8/2Diciplina/src/unidade2/dados.txt");
@@ -30,7 +32,7 @@ public class StreamApp {
 	}
 
 	public static void main(String[] args) {
-	 Scanner teclado = new Scanner(System.in);	
+	 teclado = new Scanner(System.in);	
 		try{
 			byteStream();
 			System.out.println("");

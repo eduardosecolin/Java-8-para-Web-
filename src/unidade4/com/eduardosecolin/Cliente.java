@@ -1,9 +1,32 @@
 package unidade4.com.eduardosecolin;
 
-import java.util.HashSet;
-import java.util.Set;
+//import java.util.HashSet;
+//import java.util.Set;
 
 public class Cliente {
+	
+   public String nome;
+   public String cpf;
+   public String email;
+
+ public Cliente(String nome, String cpf, String email) {
+	super();
+	this.nome = nome;
+	this.cpf = cpf;
+	this.email = email;
+}
+
+@Override
+public String toString() {
+	return "Cliente nome = " + nome;
+}
+ 
+   
+   
+	
+	
+	
+	/*
     private Set<Cursos> meuCurso;
     private Set<Curso> nossoCurso;
     
@@ -50,7 +73,7 @@ public static void main(String[] args) {
 		  aluno1.removeAll(aluno2);
 		  System.out.println(aluno1);
 		  System.out.println("-------------------------------");
-	  */
+	  
 	  
 	  
 	  
@@ -75,5 +98,5 @@ public static void main(String[] args) {
 	  
 	  
 	  
-  } 
+  } */
 }

@@ -5,6 +5,7 @@ import java.util.Formatter;
 // exerciico do final da unidade 1
 public class TesteErroTemp {
 	private int x;
+	private static Formatter f;
 	public TesteErroTemp(){
 		x = 10;
 	}
@@ -40,7 +41,7 @@ public class TesteErroTemp {
 		System.out.println(t.getX());
 		*/
 		String s = "hello123";
-		Formatter f = new Formatter();
+		f = new Formatter();
 		f.format("%S", s);
 		System.out.println(s);
 	}

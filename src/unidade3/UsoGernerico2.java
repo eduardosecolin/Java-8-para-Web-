@@ -6,8 +6,10 @@ import javax.swing.JOptionPane;
 
 public class UsoGernerico2 {
 
+	private static Scanner teclado;
+
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in);
+		teclado = new Scanner(System.in);
 		Login<String, String> iob = new Login<>("Eduardo", "@123");
 		iob.showType();
 		System.out.println(iob.toString());
